@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payments</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Select a Payment Method</h1>
+    <button onclick="handlePayment('CashApp')">💵 CashApp</button>
+    <button onclick="handlePayment('PayPal')">💳 PayPal</button>
+    <button onclick="handlePayment('Bitcoin')">₿ Bitcoin</button>
+  </div>
+  <script>
+    function handlePayment(method) {
+      alert(`You selected ${method}.`);
+      // Add your payment redirection logic here.
+      // For example:
+      // window.location.href = `https://example.com/pay/${method.toLowerCase()}`;
+    }
+  </script>
+</body>
+</html>

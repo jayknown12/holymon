@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>API Login</h1>
+    <input id="apiKeyInput" type="text" placeholder="Enter API Key">
+    <button onclick="validateKey()">Submit</button>
+  </div>
+
+  <script>
+    function validateKey() {
+      const apiKey = document.getElementById('apiKeyInput').value;
+      if (apiKey === "valid_api_key") {
+        alert("API Key Validated. Redirecting...");
+        // Redirect to your next page or enable commands
+      } else {
+        alert("Invalid API Key.");
+      }
+    }
+  </script>
+</body>
+</html>
